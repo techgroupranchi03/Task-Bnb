@@ -1,0 +1,73 @@
+name: task_bnb
+description: "Task Bnb - Property & Task Management Mobile App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # ── State Management ──────────────────────────────────
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # ── Networking ────────────────────────────────────────
+  dio: ^5.7.0
+
+  # ── Routing ───────────────────────────────────────────
+  go_router: ^14.6.3
+
+  # ── Storage ───────────────────────────────────────────
+  flutter_secure_storage: ^9.2.4
+  shared_preferences: ^2.3.3
+
+  # ── Models / Serialization ────────────────────────────
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # ── Environment ───────────────────────────────────────
+  flutter_dotenv: ^5.2.1
+
+  # ── Logging ───────────────────────────────────────────
+  logger: ^2.5.0
+
+  # ── Permissions ───────────────────────────────────────
+  permission_handler: ^11.3.1
+
+  # ── Images ────────────────────────────────────────────
+  cached_network_image: ^3.4.1
+  image_picker: ^1.1.2
+
+  # ── Utilities ─────────────────────────────────────────
+  equatable: ^2.0.7
+  uuid: ^4.5.1
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # ── Code Generation ───────────────────────────────────
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.9.0
+  riverpod_generator: ^2.6.3
+  custom_lint: ^0.7.3
+  riverpod_lint: ^2.6.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env.development
+    - .env.staging
+    - .env.production
+
